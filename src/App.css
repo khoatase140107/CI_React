@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-logo {
@@ -22,6 +24,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-color: white;
 }
 
 .App-link {
@@ -35,4 +38,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.undoneList {
+  border-radius: 30px;
+  width: 40%;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.075);
+}
+.undoneList h1 {
+  width: 100%;
+  background-color: #c75174;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.undoneList li {
+  color: black;
+  list-style-type: none;
+  font-size: 24px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+}
+.undoneList li:hover {
+  background-color: #a1beeb;
+}
+
+.doneList {
+  border-radius: 10px;
+  width: 40%;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.075);
+}
+.doneList h1 {
+  color: #ffffff;
+  background-color: #9dbceb;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.doneList li {
+  color: black;
+  list-style-type: none;
+  font-size: 24px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+}
+
+.doneList li:hover {
+  background-color: #c75174;
 }
